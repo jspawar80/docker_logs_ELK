@@ -19,3 +19,8 @@ This will change the permissions of the file to `-rw-r--r--`.
    ```bash
    docker-compose restart filebeat
    ```
+4. Random Log generator
+
+```
+docker run -d chentex/random-logger:latest
+```
