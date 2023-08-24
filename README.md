@@ -3,25 +3,13 @@
 
 1. **Clone this repository**
 
-2. **Start Services with Docker Compose**
-
-    If you're using Docker Compose, you can start Elasticsearch, Kibana, and optionally Logstash by running:
-
-    ```bash
-    docker-compose up -d
-    ```
-
-3. **Access Kibana**
-
-    Open your web browser and navigate to `http://localhost:5601` to access Kibana.
-
-4. Change the ownership of the `filebeat.yml` file to root:
+2. Change the ownership of the `filebeat.yml` file to root:
 
    ```bash
    sudo chown root:root filebeat.yml
    ```
 
-5. Adjust the file permissions so that only the owner (root in this case) can write to it:
+3. Adjust the file permissions so that only the owner (root in this case) can write to it:
 
    ```bash
    sudo chmod go-w filebeat.yml
@@ -29,16 +17,21 @@
 
 This will change the permissions of the file to `-rw-r--r--`.
 
-6. Restart the Filebeat container:
+4. **Start Services with Docker Compose**
 
-   ```bash
-   docker-compose restart filebeat
-   ```
-7. Random Log generator
+    If you're using Docker Compose, you can start Elasticsearch, Kibana, and optionally Logstash by running:
+
+    ```bash
+    docker-compose up -d
+    ```
+5. Random Log generator
 
 ```
 docker run -d --name log-generator chentex/random-logger:latest
 ```
+6. **Access Kibana**
+
+    Open your web browser and navigate to `http://localhost:5601` to access Kibana.
 
 Here are the steps to set up an index pattern for `logstash-*` in Kibana:
 
