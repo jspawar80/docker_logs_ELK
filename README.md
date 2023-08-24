@@ -30,7 +30,7 @@ This will change the permissions of the file to `-rw-r--r--`.
 docker run -d --name log-generator chentex/random-logger:latest
 ```
 
-Here are the steps to set up an index pattern for `logstash-*` in Kibana:
+## Here are the steps to set up an index pattern for `logstash-*` in Kibana:
 
 ### Step 1: Access Kibana
 
