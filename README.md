@@ -50,11 +50,11 @@ Open your web browser and navigate to your Kibana instance. The URL is usually `
 
 Once Kibana is open, look for the "Stack Management" option in the left-hand sidebar and click on it.
 
-### Step 5: Define Index Pattern
+### Step 3: Define Index Pattern
 
 In the "Index pattern name" field, type `logstash-*` to match all indices that have names starting with `logstash-`.
 
-### Step 6: Configure Settings
+### Step 4: Configure Settings
 
 - **Time Filter**: If your Logstash indices contain time-based events, you'll want to choose a time field for your index pattern. This is often `@timestamp`, which is a commonly used field for time-based logs.
   
