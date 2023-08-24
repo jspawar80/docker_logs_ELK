@@ -29,9 +29,6 @@ This will change the permissions of the file to `-rw-r--r--`.
 ```
 docker run -d --name log-generator chentex/random-logger:latest
 ```
-6. **Access Kibana**
-
-    Open your web browser and navigate to `http://localhost:5601` to access Kibana.
 
 Here are the steps to set up an index pattern for `logstash-*` in Kibana:
 
